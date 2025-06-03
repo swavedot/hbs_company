@@ -388,15 +388,16 @@
  box-sizing: border-box;
  transition: .3s ease-in-out;
  opacity: 0;
+ z-index: 20;
 }
 .footer_top .link_list li a {
- display: block;
- color: #292929;
- font-size: 16px;
- font-weight: 300;
- line-height: 0;
- transition: .3s ease-in-out;
- transition-property: line-height, padding;
+  display: block;
+  color: #292929;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1;         
+  padding: 4px 0;         
+  transition: all .3s ease-in-out;
 }
 .footer_top .link_list li a:hover {
  font-weight: 600;
