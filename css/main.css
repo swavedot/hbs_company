@@ -141,7 +141,7 @@
  */
  overflow: hidden; } 
 .main .sec02 .main_banner.on { transition: clip-path .8s .1s ease; clip-path: polygon(0% 0%, 100% 0, 100% 100%, 0% 100%); } 
-.main .sec02 .main_banner .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/banner.jpg) no-repeat center top / cover; transition: .8s ease-in-out; } 
+.main .sec02 .main_banner .bg { position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: url(../images/Banner.jpg) no-repeat center top / cover; transition: .8s ease-in-out; } 
 .main .sec02 .main_banner a { color: #fff; display: flex; justify-content: center; align-items: center; flex-direction: column; height: 460px; position: relative; } 
 
 .main .sec02 .main_banner .banner_name { font-size: 46px; font-weight: 700; margin-bottom: 30px; line-height: 50px; } 
