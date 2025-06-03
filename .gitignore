@@ -1,0 +1,4 @@
+# vscode 사용자 설정 무시 
+.vscode
+# MacOs 시스템 파일 무시 
+.DS_Store
