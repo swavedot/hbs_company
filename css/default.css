@@ -53,3 +53,10 @@ textarea{display:block;overflow:auto;resize:vertical;}
 input[disabled]{background-color:#ebebeb;}
 select:disabled{background-color:#ebebeb;}
 [hidden]{display:none!important;}
+
+@font-face {
+    font-family: 'Dokrip';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}

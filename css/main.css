@@ -34,6 +34,12 @@
 }
 
 
+@media (max-width: 1200px) {
+  .main .main_inner { width: 1000px;}
+  .layout { padding: 20px;}
+  
+}
+
 @media (max-width: 1000px) { 
  .main .main_inner { width: calc(100% - 50px); } 
 }
@@ -395,8 +401,7 @@
   color: #292929;
   font-size: 16px;
   font-weight: 300;
-  line-height: 1;         
-  padding: 4px 0;         
+  line-height: 0px;               
   transition: all .3s ease-in-out;
 }
 .footer_top .link_list li a:hover {
