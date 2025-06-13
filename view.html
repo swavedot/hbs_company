@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="에이치비에스 기업 사이트">
+  <meta name="keywords" content="산업통합시스템 선도기업, 모터, 선박, 에이치비에스, hbs">
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="에이치비에스">
+  <meta property="og:url" content="https://hbs-company-delta.vercel.app/">
+  <meta property="og:title" content="에이치비에스">
+  <meta property="og:description" content="산업통합시스템 선도기업">
+
+  <meta property="og:image" content="https://hbs-company-delta.vercel.app/images/og-1200.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+
+  <!-- favicon -->
+  <link rel="shortcut icon" href="./images/fvavicon-32x32.png" type="image/x-icon" sizes="32x32">
+  <link rel="shortcut icon" href="./images/fvavicon-18x18.png" type="image/x-icon" sizes="18x18">
+  <link rel="shortcut icon" href="./images/fvavicon-180x180.png" type="image/x-icon" sizes="180x180">
+
+  <!-- style -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" href="./css/contents.css">
+  
+  
+  <!-- script -->
+  <script src="https://code.jquery.com/jquery-3.7.1.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+
+  <script src="./js/common.js"></script>
+
+  <title>에이치비에스 주식회사</title>
+</head>
+<body data-top="no-top">
+  <!-- header -->
+   <div id="header"></div>
+   <script>
+    fetch('/inc/top_menu.html')
+      .then(res => res.text())
+      .then(html => {
+        document.querySelector('#header').innerHTML = html;
+      });
+   </script>
+  <!-- //header -->
+  
+  <!-- about content -->
+  <div id="container" class="hbs_notice hbs_corp">
+    <!-- 상단 이미지 -->
+    <div id="sub_banner">
+      <div class="sub_visual">
+        <div class="visual_img"></div>
+      </div>
+      <h2 class="page_name"></h2>
+      <div class="path_wrap">
+        <ul class="path_list">
+          <!-- javascript에서 불러오기 -->
+          <!-- <li class="path_item active"><a href="./about.html" class="path_text">인사말</a></li>
+          <li class="path_item"><a href="./certi.html" class="path_text">인증서</a></li>
+          <li class="path_item"><a href="./location.html" class="path_text">오시는 길</a></li> -->
+        </ul>
+      </div>
+    </div>  
+    <!-- //상단 이미지 -->
+
+    <!-- sub content -->
+    <div id="content">
+      <div class="cont_head">
+        <div class="subject">NOTICE</div>
+        <div class="title">공지사항</div>
+      </div>
+      <div class="inner_wrap view">
+        <div class="context">
+          <div class="topbox">
+            <div class="title">제 7기 정기주주총회 소집 공고</div>
+            <div class="data">24.03.08</div>
+          </div>
+          <!-- 공지내용 본문 -->
+           <div class="botbox">
+             <div class="viewtext">
+               <div class="subtit">주주총회에서는 뭘 할까요?</div>
+               <div class="detail_info">
+                주주총회는 회사의 최고 의사결정기구로, 주주들이 모여 회사의 중요한 사안을 결정하는 회의입니다.<br/> 
+                주주총회는 보통 정기주주총회와 임시주주총회로 나뉘며, 주요하게 다루는 내용은 다음과 같습니다.
+                <br/><br/>
+                정기주주총회 (보통 매년 1회, 결산 후)
+                주로 다음과 같은 안건을 처리합니다:<br/><br/>
+                
+                1.재무제표 승인<br/>
+                손익계산서, 대차대조표 등 회사 실적을 승인<br/><br/>
+                
+                2.이익배당 결정<br/>
+                배당금 지급 여부 및 액수<br/><br/>
+                
+                3.이사·감사 선임<br/>
+                새로운 이사나 감사 선출 또는 재선임<br/><br/>
+          
+                4.이사 보수한도 승인<br/>
+                이사회 구성원들이 받을 수 있는 보수의 총액 결정<br/><br/>
+
+                5.정관 변경<br/>
+                회사의 운영에 관한 기본 규칙(정관) 변경<br/><br/>
+               </div>
+             </div> 
+           </div>
+        </div>
+        
+        <!-- page_controller -->
+        <div class="page_controller">
+          <div class="link_line">
+            <span class="text">NEXT</span>
+            <a href="#" class="next disabled">다음글이 없습니다.</a>
+            <span class="data"></span>
+          </div>
+          <div class="link_line">
+            <span class="text">PREV</span>
+            <a href="#" class="prev">제 7기 정기주주총회 소집 공고2</a>
+            <span class="data">24.03.08</span>
+          </div>
+        </div>
+
+        <!-- button -->
+        <div class="return_list">
+          <a href="./04_notice.html">목록으로</a>
+        </div> 
+
+      </div>  
+    </div>
+    <!-- //sub content -->
+  </div>
+  <!-- //about content -->
+
+  <!-- footer -->
+   <div id="footer"></div>
+    <script>
+    fetch('/inc/footer.html')
+      .then(res => res.text())
+      .then(html => {
+        document.querySelector('#footer').innerHTML = html;
+
+        const script =document.createElement('script');
+        script.src = './js/main.js';
+        document.body.appendChild(script);
+      });
+   </script>
+  <!-- //footer -->
+  <script src="./js/sub.js"></script>
+</body>
+</html>

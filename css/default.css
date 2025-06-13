@@ -55,8 +55,8 @@ select:disabled{background-color:#ebebeb;}
 [hidden]{display:none!important;}
 
 @font-face {
-    font-family: 'Dokrip';
-    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_twelve@1.1/Dokrip.woff') format('woff');
+    font-family: 'KCCImkwontaek';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2202@1.0/KCCImkwontaek.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }

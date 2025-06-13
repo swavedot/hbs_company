@@ -71,7 +71,7 @@ $('.sec02 .tab_box .brand_tab').on('click', function(){
   else if (index === 5) href = `/02_product_5.html`;
   else if (index === 6) href = `/02_product_6.html`;
   else if (index === 7) href = `/02_product_7.html`;
-  $('.sec02 .linkbox a').attr('href', href)
+  $('.sec02 .linkbox a').attr('href', href);
 });
 
 // notice 슬라이드
@@ -105,25 +105,22 @@ $('.sec04 .slide').slick({
   $('.sec04 .slide .slick-slide[aria-hidden = "true"]').find('*:focus').blur();
 });
 
-//Famliy site 
-const langOpen = '열기'
-const langClose = '닫기'
+// Family site 열고 닫기
+const langOpen = '열기';
+const langClose = '닫기';
 
 $('.link_open').on('click', function(){
-  const $this = $(this); //현재 클릭한 요소를 변수에 저장
-  const isOpen = $this.attr('title') === langOpen; //현재 상태가 '열기' 상태인지 확인
+  const $this = $(this); // 현재 클릭한 요소를 변수에 저장
+  const isOpen = $this.attr('title') === langOpen; //현재 상태가 "열기" 상태인지 확인
 
-  $this 
-      .attr('title', isOpen ? langClose : langOpen) //상태에 따라 'title을 '닫기' 또는 '열기'로 변환
-      .toggleClass('on',isOpen) //열기 상태면 'on' 클래스 추가, 닫기면 제거
+  $this
+      .attr('title', isOpen ? langClose : langOpen) // 상태에 따라 title을 "닫기" 또는 "열기"로 변환
+      .toggleClass('on', isOpen)// 열기 상태면 'on' 클래스 추가, 닫기면 제거
       .siblings('ul').toggleClass('active', isOpen) // 형제 ul에 'active' 클래스 토글
-      
-});
+}); 
+
 
 // 하단 현재 년도 출력
-// document.querySelector('.this_year').textContent = new Date().getFullYear();
+// document.getElementById('this_year').textContent = new Date().getFullYear()
 
-$('.this_year').text(new Date().getFullYear());
-    
-
-
+$('#this_year').text(new Date().getFullYear());
